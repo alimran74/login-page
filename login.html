@@ -4,11 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
-    <link rel="shortcut icon" href="../images/icon/fabicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon/fabicon.png" type="image/x-icon">
     <link rel="stylesheet" href="login.css">
-    
+    <style>
+        body,html{
+            
+            margin: 0px;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+         .background-image{  
+            background-image: url(images/flag2.jpg); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+
+
+
+        /* Center container */
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; /* Full viewport height */
+    }
+
+    /* Login box styling */
+    .login-box {
+      background:transparent; /* White background */
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow:5px 5px 5px 5px ; /* Subtle shadow */
+      width: 300px;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color:transparent; /* Blue button */
+      color:transparent;
+      border:4px 4px 4px 4px ;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .login-box button:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    .login-box a {
+      display: block;
+      margin-top: 10px;
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-box a:hover {
+      text-decoration: underline;
+    }
+      
+    </style>
+
 </head>
 <body>
+    <div class="background-image">
     
+
+
+
+
+        <div class="login-container">
+            <div class="login-box">
+              <h2>Login</h2>
+              <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" placeholder="hi">Login</button>
+                
+              </form>
+            </div>
+          </div>
+
+
 </body>
+    
+    
+
 </html>
